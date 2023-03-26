@@ -1,6 +1,7 @@
+import java.util.List;
+import java.util.ArrayList;
 class OrderedList<T extends Comparable<T>> {
    List<T> list = new ArrayList<>();
-
    public void add(T element){
       for (int i = 0; i < list.size(); i++) {
          T value = list.get(i);

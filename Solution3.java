@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution2 {
+public class Solution3 {
 
     public static void main(String[] args) {
       Integer[] numbers = new Integer[] {5, 10, 15, 0};
@@ -17,13 +17,13 @@ public class Solution2 {
     }
 
 
-    public static void sort(Object[] array) {
+    public static void sort(Comparable[] array) {
       boolean sorted = false;
       while (!sorted) {
         sorted = true;
         for (int i = 0; i < array.length - 1; i++) {
-          Comparable current = (Comparable) array[i];
-          Comparable next = (Comparable) array[i + 1];
+          Comparable current = array[i];
+          Comparable next = array[i + 1];
           if (current.compareTo(next) > 0) {
             array[i] = next;
             array[i + 1] = current;

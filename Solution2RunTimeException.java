@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution2 {
+public class Solution2RunTimeException {
 
     public static void main(String[] args) {
       Integer[] numbers = new Integer[] {5, 10, 15, 0};
@@ -9,11 +9,11 @@ public class Solution2 {
       sort(numbers);
       System.out.println("After sorting: " + Arrays.toString(numbers) + "\n");
 
-      //Person[] people = new Person[] {new Person("John", 31), new Person("Jamie", 33), new Person("Jane", 0)};
-      //System.out.println("Before sorting: " + Arrays.toString(people));
+      Person[] people = new Person[] {new Person("John", 31), new Person("Jamie", 33), new Person("Jane", 0)};
+      System.out.println("Before sorting: " + Arrays.toString(people));
 
-      //sort(people); // This will throw an exception!
-      //System.out.println("After sorting: " + Arrays.toString(people) + "\n");
+      sort(people); // This will throw an exception!
+      System.out.println("After sorting: " + Arrays.toString(people) + "\n");
     }
 
 
